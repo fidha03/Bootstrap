@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .btn {
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 0;
+        }
+
+        .home,
+        .l-sec {
+            background: url("bgimg.jpg") no-repeat;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .caption {
+            width: 50%;
+        }
+
+        .form {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex end;
+            background-color: white;
+        }
+
+        label {
+            color: black;
+            justify-content: flex-start\;
+        }
+
+        .features {
+            padding: 50px;
+            background-color: rgb(243, 241, 241);
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .sub-title {
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .l-sec {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        i, .list{
+            color: #0e45a4;
+        }
+        footer{
+            margin: 50px;
+        }
+        .list{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-evenly" style="padding-left: 50px;">
+                <div>
+                    <a class="navbar-brand" href="#">Bootstrap</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-light btn-outline-dark">Sign In</button>
+                    <button type="button" class="btn btn-success btn-outline-dark" style="color: white;">Sign
+                        Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="container d-flex">
+                <div class="caption d-flex flex-column justify-content-center">
+                    <h1>Build a landing page for your business or project and generate more leads!</h1>
+                    <p>Build a landing page for your business or project and generate more leads!</p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div class="row m-4">
+                            <div class="col-6">
+                                <label for="exampleInputName" class="form-label">First Name</label>
+                                <input type="name" class="form-control" id="exampleInputName">
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleInputName" class="form-label">Last Name</label>
+                                <input type="name" class="form-control" id="exampleInputName">
+                            </div>
+                        </div>
+                        <div class="row m-4">
+                            <div class="col-6">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleInputCity" class="form-label">City</label>
+                                <input type="name" class="form-control" id="exampleInputCity">
+                            </div>
+                        </div>
+                        <div class="row m-4">
+                            <div class="col-12">
+                                <label for="exampleInputMessage" class="form-label">Your Message</label>
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row m-4">
+                            <div class="col-12 d-flex justify-content-center m-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <section class="features">
+            <div class="container text-center">
+                <div class="row g-2">
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                            <h5 class="mt-3">Fully Responsive</h5>
+                            <p>Designed to provide a seamless experience for users across all devices</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                            <h5 class="mt-3">Bootstrap 5 Ready</h5>
+                            <p>Designed to function independently or carried out with minimal resources</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-regular fa-circle-check fa-2xl"></i>
+                            <h5 class="mt-3">Easy to Use</h5>
+                            <p>Easy to operate and understand, user-friendly and simple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 style="margin-top: 100px;">Fully Responsive Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem qui neque modi
+                            non beatae reprehenderit eligendi id quo. Eligendi expedita tempora quisquam corrupti
+                            consequuntur magnam culpa deserunt? Blanditiis, eaque!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="first.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="bootstrap.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 style="margin-top: 100px;">Updates For Bootstrap 5</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate autem dolorem unde
+                            fugiat debitis eaque atque eos harum illum. Reiciendis esse quis iste velit eius
+                            perspiciatis ab voluptas amet.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 style="margin-top: 100px;">Easy to Use & Customize</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur reiciendis
+                            asperiores ab doloribus ducimus mollitia atque in consectetur distinctio consequuntur
+                            doloremque fuga sunt, blanditiis debitis harum. Omnis, vitae autem?</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="third.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: rgb(243, 241, 241);">
+            <h4 class="sub-title">What others say for us</h4>
+            <div class="container d-flex justify-content-around">
+                <div class="card mb-3" style="max-width: 500px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="Photo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5><small class="text-primary">Text</small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+                                    eveniet architecto ex velit labore, nulla odio amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 500px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="Photo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5><small class="text-primary">Text</small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                                    vitae illo, magni doloribus dolores, voluptas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="l-sec">
+            <h4>Ready to get started? Sign up now!</h4>
+            <form>
+                <div class="d-flex justify-content-center">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"
+                        aria-describedby="emailHelp" style="width: 600px;">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="d-flex justify-content-around">
+            <div>
+                <ul class="list d-flex gap-3">
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
